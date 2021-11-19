@@ -12,4 +12,20 @@ Short summary using a screenshot of the output from the linear regression, and a
 
 - Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
-![Deliverable1](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Analysis/main/Images/MLR_image.png)
+![Deliverable1](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Images/MechaCar_deliv1.png)
+
+## Summary Statistics on Suspension Coils
+
+- Does the current manufacturing data meet the design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+![Deliverable2-1](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Images/total_summary.png)
+
+![Deliverable2-2](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Images/lot_summary.png)
+
+## T-tests on Suspension Coils
+
+![Deliverable3-1](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Images/t-test_allManufacturing.png)
+
+![Deliverable3-2](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Images/t-test_ManufacturingLot1.png)
+![Deliverable3-3](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Images/t-test_ManufacturingLot2.png)
+![Deliverable3-4](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Images/t-test_ManufacturingLot3.png)
