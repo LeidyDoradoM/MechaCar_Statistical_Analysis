@@ -17,3 +17,12 @@ total_summary <- suspCoil %>% summarise(mean = mean(PSI), median = median(PSI), 
 #---grouping by manufacturing lot and summarising
 lot_summary <- suspCoil %>% group_by(Manufacturing_Lot) %>% 
   summarise(mean = mean(PSI), median = median(PSI), variance = var(PSI) , SD = sd(PSI))
+
+##--- Deliverable 3 --- ###
+# t.test across all manufacturing Lot
+t.test(suspCoil$PSI, mu=1500)
+# t.test for each manufacturing lot
+t.test(subset(suspCoil, Manufacturing_Lot == "Lot1")$PSI, mu=1500)
+t.test(subset(suspCoil, Manufacturing_Lot == "Lot2")$PSI, mu=1500)
+t.test(subset(suspCoil, Manufacturing_Lot == "Lot3")$PSI, mu=1500)
+
