@@ -9,22 +9,28 @@ For this part of the analysis, we use the dataset in [MechaCar_mpg.csv](https://
 ![Deliverable1](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Images/MechaCar_deliv1.png)
 Figure 1. Linear Regression in R for estimating *mpg* of the MechaCar prototypes.
 
-- Coefficients that provide a non-random amount of variance to the **mpg** estimation are the *vehicle_length* and *ground_clearance* (indicated by ***).  Their  p-values (column ```Pr(>|t|)```) are smaller than 0.05, which means they are statistically significant and contribute to the model.  The intercept is also statistically significant, which means there are other variables, not included in this analysis, that could impact on the *mpg*.
+- Coefficients that provide a non-random amount of variance to the **mpg** estimation are the *vehicle_length* and *ground_clearance* (indicated by ***).  Their  *p-values* (column ```Pr(>|t|)```) are smaller than 0.05, which means they are statistically significant and contribute to the model.  The intercept is also statistically significant, which means there are other variables, not included in this analysis, that could impact on the *mpg*.
 
-- The slope in a linear model represents the relationship between the variable being estimated and the other(s) variables, i.e., if there are variables contributing to the estimation of a specific one. To check if the slope of our model is zero or not, we need to look at the * Overall Performance Measurements* in the bottom of Figure 1. The ```F-statistic``` and specifically the p-value: 5.35e-11 is very small (<0.05) indicating that the relationship between our variables and **mpg** is subject to more than random chance and consequentely the slope could not be zero.
+- The slope in a linear model represents the relationship between the variable being estimated and the other(s) variables, i.e., if there are variables contributing to the estimation of a specific one. To check if the slope of our model is zero or not, we need to look at the * Overall Performance Measurements* in the bottom of Figure 1. The ```F-statistic``` and specifically the *p-value:* 5.35e-11 is very small (<0.05) indicating that the relationship between our variables and **mpg** is subject to more than random chance and consequentely the slope could not be zero.
 
-- As it was established before, the intercept of our model is statistically significant implying there are factors that have not been taking into consideration in this linear model. In addition, the overall ```Multiple R-squared``` value of 0.7149 shows us that although our model predicts **mpg88 of MechaCar prototypes with some efficacy, it could be improved.
+- As it was established before, the intercept of our model is statistically significant implying there are factors that have not been taking into consideration in this linear model. In addition, the overall ```Multiple R-squared``` value of 0.7149 shows us that although our model predicts **mpg** of MechaCar prototypes with some efficacy, it could be improved.
 
 ## Summary Statistics on Suspension Coils
 
-The second part of this analysis considers the estimation of statistics such as the mean, median, variance and standard deviation for the data in [Suspension_Coil.csv](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Resources/MechaCar_mpg.csv). This dataset contains the results from multiple production lots of MechaCar prototypes. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. Figure 2 and 3 show these statistics in two different scenarios. In the first figure, the statistics are computed for all
+The second part of this analysis considers the estimation of statistics such as the mean, median, variance and standard deviation for the data in [Suspension_Coil.csv](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Resources/Suspension_Coil.csv). This dataset contains the results from multiple production lots of MechaCar prototypes. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. Figure 2 and 3 show these statistics in two different scenarios: Statistics computed across all the production lots, and statistics computed for each of the production lots:
 
 
 ![Deliverable2-1](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Images/total_summary.png)
 
+Figure 2. Statistics for all Manufacturing Lots.
+
 ![Deliverable2-2](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Images/lot_summary.png)
 
-- Does the current manufacturing data meet the design specification for all manufacturing lots in total and each lot individually? Why or why not?
+Figure 3. Statistics for each Manufaturing Lot.
+
+- 
+The design specifications for the **MechaCar** suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch.
+Does the current manufacturing data meet the design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
 ## T-tests on Suspension Coils
 
