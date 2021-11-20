@@ -17,7 +17,7 @@ Figure 1. Linear Regression in R for estimating *mpg* of the MechaCar prototypes
 
 ## Summary Statistics on Suspension Coils
 
-The second part of this analysis considers the estimation of statistics such as the mean, median, variance and standard deviation for the data in [Suspension_Coil.csv](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Resources/Suspension_Coil.csv). This dataset contains the results from multiple production lots of MechaCar prototypes. In this dataset, the weight capacities of multiple suspension coils were tested to determine if the manufacturing process is consistent across production lots. Figure 2 and 3 show these statistics in two different scenarios: Statistics computed across all the production lots, and statistics computed for each of the production lots:
+The second part of this analysis considers the estimation of statistics such as the mean, median, variance and standard deviation for the data in [Suspension_Coil.csv](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Resources/Suspension_Coil.csv). This dataset contains the results from multiple production lots of MechaCar prototypes. In this dataset, the weight capacities of multiple suspension coils (PSI) were tested to determine if the manufacturing process is consistent across production lots. Figure 2 and 3 show these statistics in two different scenarios: Statistics for PSI computed across all the production lots, and statistics computed for each of the production lots:
 
 
 ![Deliverable2-1](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Images/total_summary.png)
@@ -28,9 +28,7 @@ Figure 2. Statistics for all Manufacturing Lots.
 
 Figure 3. Statistics for each Manufaturing Lot.
 
-- 
-The design specifications for the **MechaCar** suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch.
-Does the current manufacturing data meet the design specification for all manufacturing lots in total and each lot individually? Why or why not?
+- Considering that the design specifications for the **MechaCar** suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch (psi), we can conclude that across al the manufacturing lots (figure 2) the manufacturing data meet the design specifications (```variance ~ 62```), but for the specific cases (figure 3), the variance for the **Lot3** exceeds the 100 psi.
 
 ## T-tests on Suspension Coils
 
