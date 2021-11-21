@@ -60,11 +60,15 @@ In our final analysis we will determine if all manufacturing lots and each lot i
 
 ## Study Design: MechaCar vs Competition
 
-Continuing with our analysis of the **MechaCar** production data and to see how these prototypes perform against the competition. It could be interesting to find how the maintenance cost and fuel eficiency 
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+Continuing with our analysis of the **MechaCar** production data and to see how these prototypes perform against the competition. It could be interesting to consider an additional data analysis where factors like traffic and road conditions are considered since they can affect the estimation of **mpg**.  So in our analysis we are going to consider the **highway mpg**  and the **city mpg**.  We will need as well information about the car transmission: mechanic or authomatic, so we can study how the kind of transmission affects the city and highway fuel efficiency.  
 
-In your description, address the following questions:
-What metric or metrics are you going to test?
-What is the null hypothesis or alternative hypothesis?
-What statistical test would you use to test the hypothesis? And why?
-What data is needed to run the statistical test?
+1. In our analysis, we will test the **highway mpg** and/or the **city mpg** against the car transmission to see if the manual or authomatic transmission has an impact in the amount of fuel the car consumes in each scenario individually.
+
+2. Our null hypothesis is: The variance of fuel use in the city/or the highway is equal for the cars with authomatic and manual transmissions.
+
+3. To test our null hypothesis we will use the two sample t-test. In fact we need to run this t-test twice, one for the **city mpg** and the other for the **highway mpg**.  In each test, we will need to determine if our null hypthesis can be rejected or not, based on the ```p-value```. For example: if our ```p-value``` is smaller than 0.05, the null hypotheis is rejected and we can conclude that there is a statistically significant relationship between whether the car has an automatic or manual transmision and the amount of fuel it consumes while driving in a city/highway scenario.
+
+4. In our analysis, we would need:
+    - **City mpg** data: It can be estimated as the average a car will get while driving on an open stretch of road without stopping or starting, typically at a higher speed.
+    - **Highway mpg**:  It is the score a car will get on average in city conditions, with stopping and starting at lower speeds.
+    - **Car transmision**: It is a categorical data,a dichotomous variable: 0 - manual transmission, 1 - authomatic transmission.
