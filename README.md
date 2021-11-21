@@ -32,8 +32,39 @@ Figure 3. Statistics for each Manufaturing Lot.
 
 ## T-tests on Suspension Coils
 
+In our final analysis we will determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 psi.
+
+### T-test on PSI across all manufacturing lots:
+
 ![Deliverable3-1](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Images/t-test_allManufacturing.png)
 
+- The ```p-value``` is greather than the limit value of 0.05, which means the mean of the psi across all the manufacturing lots and the population mean are not statistically different.
+
+### T-test on PSI for Manufacturing Lot 1:
+
 ![Deliverable3-2](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Images/t-test_ManufacturingLot1.png)
+
+- The ```p-value``` in this case is greather than the limit value of 0.05, which means the mean of the psi for manufacturing lot 1 and the population mean are not statistically different.
+
+### T-test on PSI for Manufacturing Lot 2:
+
 ![Deliverable3-3](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Images/t-test_ManufacturingLot2.png)
+
+- Again for manufacuring Lot 2, the ```p-value``` is greather than 0.05, which means the mean of the psi for manufacturing lot 2 and the population mean are not statistically different. 
+
+### T-test on PSI for Manufacturing Lot 3:
+
 ![Deliverable3-4](https://raw.githubusercontent.com/LeidyDoradoM/MechaCar_Statistical_Analysis/main/Images/t-test_ManufacturingLot3.png)
+
+- In this case the psi mean for Lot 3 is slightly statistically different from the mean population since the ```p-value``` is barely smaller than 0.05.  In fact, this is the lot with a mean psi value smaller than the other mean psi values. We will probably need to evaluate this manufacturing lot in more detail. 
+
+## Study Design: MechaCar vs Competition
+
+Continuing with our analysis of the **MechaCar** production data and to see how these prototypes perform against the competition. It could be interesting to find how the maintenance cost and fuel eficiency 
+Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
+
+In your description, address the following questions:
+What metric or metrics are you going to test?
+What is the null hypothesis or alternative hypothesis?
+What statistical test would you use to test the hypothesis? And why?
+What data is needed to run the statistical test?
